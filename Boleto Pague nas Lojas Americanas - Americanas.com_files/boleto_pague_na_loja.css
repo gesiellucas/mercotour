@@ -1,0 +1,179 @@
+*{
+	margin:0;
+	padding:0;
+	outline:0;
+}
+
+html, body{
+	background:transparent;
+}
+
+body{
+	color:#666;
+	font:9px/1.4 Arial, sans-serif;
+	padding:20px 0;
+}
+
+.wrapper{
+	width: 710px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.header{
+	width:399px;
+	min-height:750px;
+	float:left;
+	font-size:2em;
+
+}
+	.brand{
+		margin-bottom:50px;
+	}
+.content{
+	float:right;
+	width:250px;
+	padding-left:20px;
+	border-left:1px solid #666;
+}
+
+.instructions{
+	color:#000;
+}
+	.instructions a{
+		color:#f70008;
+		text-decoration:underline;
+	}
+	.instru-li{
+		min-height:55px;
+		margin:0 0 50px 65px;
+		list-style-position:outside;
+	}
+		.printIt{
+			list-style-image:url(../img/printit.png);
+		}
+		.payIt{
+			list-style-image:url(../img/payit.png);
+		}
+		.waitDelivery{
+			list-style-image:url(../img/waitdelivery.png);
+		}
+			.instru-li-txt{
+				position:relative;
+				top:-35px;
+				left:10px;
+			}
+		.payAdress{
+			list-style-image:url(../img/payAdress.png);
+			margin-bottom:0;
+		}
+
+.buttons{
+	margin:5px 0px 20px 0px;
+	text-align:center;
+}
+	.bt{
+		cursor:pointer;
+		display:inline-block;
+		border:0;
+		padding:0;
+		border-radius:0;
+		text-decoration:none;
+		text-indent:-9999px;
+	}
+		.btPrint{
+			background:url(../img/btprint.png) no-repeat 0 0;
+			width:151px;
+			height:53px;
+		}
+
+.contact{
+	width:100%;
+	font-size:12px;
+	line-height:15px;
+	color:#000;
+	padding-left:40px;
+	margin-top:20px;
+	background:url(../img/contact.png) no-repeat left center;
+	float:left;
+}
+	.contact .ctTxt .ctLnk{
+		color:#e41e25;
+	}
+
+.box {
+	border-bottom:1px solid #666;
+	margin-bottom:3px;
+	padding-bottom:5px;
+}
+	.boxTitle{
+		font-size:1.5em;
+		font-weight:700;
+		color:#f70008;
+		text-align:left;
+		margin-bottom:0px;
+	}
+.exchange{
+	margin-bottom:5px;
+}
+.boxBarcode{
+	text-align:center;
+	font-size:0;
+}
+	.boxBarcodeBottom{
+		border:0;
+		padding-bottom:0;
+		margin-bottom:0;
+	}
+	.barcode{
+		display:inline-block;
+	}
+
+.deailsList{
+	width:100%;
+	text-align:left;
+	empty-cells:hide;
+	border-collapse:separate;
+}
+	td,th{
+		vertical-align:top;
+	}
+	.deailsList .boxTitle{
+		border-bottom:0px solid transparent;
+		margin: 0;
+	}
+	.prodLt-title-item{
+		border-bottom:0px solid transparent;
+	}
+	.prodLt-orderMod-row-first .prodLt-footHeader,
+	.prodLt-orderMod-row-first .prodLt-prodPrice{
+		border-top:5px solid transparent;
+	}	
+
+.prodLt-productQtd{
+	text-align:center;
+}
+.prodLt-prodPrice,
+.prodLt-footHeader{
+	text-align:right;
+}
+.prodLt-prodPrice{
+	white-space:nowrap;
+}
+.prodLt-footHeader{
+	padding-right:10px;
+}
+.prodLt-total{
+	font-size:1.5em;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+@media print{
+	body{
+		padding:0;
+	}
+	.btPrint{
+		display:none;
+	}
+}
